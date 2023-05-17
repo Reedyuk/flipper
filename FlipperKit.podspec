@@ -40,7 +40,7 @@ Pod::Spec.new do |spec|
     # by other FlipperKit source files
     ss.private_header_files = 'iOS/FlipperKit/CppBridge/**/*.h'
     ss.preserve_path = 'iOS/FlipperKit/CppBridge/**/*.h'
-    header_search_paths = "\"$(PODS_ROOT)/Flipper-Boost-iOSX\" \"$(PODS_ROOT)/Flipper-DoubleConversion\" \"$(PODS_ROOT)/FlipperKit/iOS/**/\" \"$(PODS_ROOT)/libevent/include\""
+    # header_search_paths = "\"$(PODS_ROOT)/Flipper-Boost-iOSX\" \"$(PODS_ROOT)/Flipper-DoubleConversion\" \"$(PODS_ROOT)/FlipperKit/iOS/**/\" \"$(PODS_ROOT)/libevent/include\""
     ss.pod_target_xcconfig = { "USE_HEADERMAP" => "NO",
                                 "ONLY_ACTIVE_ARCH": "YES",
                              "DEFINES_MODULE" => "YES",
@@ -55,7 +55,7 @@ Pod::Spec.new do |spec|
     # We set these files as private headers since they only need to be accessed
     # by other FlipperKit source files
     ss.private_header_files = 'iOS/FlipperKit/FBCxxFollyDynamicConvert/**/*.h'
-    header_search_paths = "\"$(PODS_ROOT)/Flipper-Boost-iOSX\" \"$(PODS_ROOT)/Flipper-DoubleConversion\" \"$(PODS_ROOT)/libevent/include\""
+    # header_search_paths = "\"$(PODS_ROOT)/Flipper-Boost-iOSX\" \"$(PODS_ROOT)/Flipper-DoubleConversion\" \"$(PODS_ROOT)/libevent/include\""
     ss.pod_target_xcconfig = { "USE_HEADERMAP" => "NO",
                                "ONLY_ACTIVE_ARCH": "YES",
                                "DEFINES_MODULE" => "YES",
@@ -81,7 +81,7 @@ Pod::Spec.new do |spec|
     ss.compiler_flags = folly_compiler_flags
     ss.source_files = 'iOS/FlipperKit/*.{h,m,mm}', 'iOS/FlipperKit/CppBridge/*.{h,mm}'
     ss.public_header_files = 'iOS/FlipperKit/**/{FlipperDiagnosticsViewController,FlipperStateUpdateListener,FlipperClient,FlipperPlugin,FlipperConnection,FlipperResponder,SKMacros,FlipperKitCertificateProvider}.h'
-    header_search_paths = "\"$(PODS_ROOT)/FlipperKit/iOS/FlipperKit/\" \"$(PODS_ROOT)/Headers/Private/FlipperKit/\" \"$(PODS_ROOT)/Flipper-Boost-iOSX\" \"$(PODS_ROOT)/SocketRocket\" \"$(PODS_ROOT)/libevent/include\""
+    # header_search_paths = "\"$(PODS_ROOT)/FlipperKit/iOS/FlipperKit/\" \"$(PODS_ROOT)/Headers/Private/FlipperKit/\" \"$(PODS_ROOT)/Flipper-Boost-iOSX\" \"$(PODS_ROOT)/SocketRocket\" \"$(PODS_ROOT)/libevent/include\""
     ss.pod_target_xcconfig = { "USE_HEADERMAP" => "NO",
                                "ONLY_ACTIVE_ARCH": "YES",
                                "DEFINES_MODULE" => "YES",
